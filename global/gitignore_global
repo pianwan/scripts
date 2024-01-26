@@ -1,0 +1,22 @@
+# Basic
+*~
+.DS_Store
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+# VSCode
+.vscode
+# github & gitee
+.github
+.gitee
+# docker
+.devcontainer
+# python
+venv/
+__pycache__
+# Log file
+*.log
+# texpad
+.texpadtmp
