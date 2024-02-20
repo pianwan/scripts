@@ -9,7 +9,7 @@ sudo spctl --master-disable
 brew update
 
 # install cli
-brew install gcc ffmpeg node nvm bat cmatrix commitzen deno opencv httpie wget tree gh git-lfs hyperfine jq fd ant pandoc autoconf qt telnet
+brew install gcc lua ffmpeg node nvm bat cmatrix commitzen deno opencv httpie wget tree gh git-lfs hyperfine jq fd ant pandoc autoconf qt telnet
 
 # install omz
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -17,6 +17,7 @@ source ~/.zshrc
 
 # install z.lua
 brew install z.lua
+eval "$(lua $(brew --prefix z.lua)/share/z.lua/z.lua --init zsh)"
 
 # install starship
 brew install starship
