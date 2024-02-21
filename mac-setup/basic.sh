@@ -4,6 +4,9 @@ xcode-select --install
 # trust any source
 sudo spctl --master-disable
 
+# cmd+^ drag
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
@@ -37,3 +40,11 @@ brew install --cask iterm2
 # ide
 brew install --cask visual-studio-code intellij-idea clion goland pycharm
 
+# C++ env
+brew install gcc
+# google format for cpp: Clion > settings > Editor > Code Style > Enable ClangFormat (only for C/C++/Objective-C)
+brew install clang-format
+clang-format -style=Google -dump-config > ~/.clang-format
+
+# Java env
+brew install maven gradle 
